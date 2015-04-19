@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Mobile Number</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for users in user %}
+  				<tr>
+  					<td>
+    					{{ users.name }}
+  					</td>
+  					<td>
+  						{{ users.mob}}
+  					</td>
+  					<td>
+  						{{ users.email}}
+  					</td>
+  				<tr>
+			{% endfor %}
+		</tbody>
+	<table>
+</body>
+</html>
